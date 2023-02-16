@@ -1,0 +1,52 @@
+\documentclass[11pt]{article}
+
+%宏包
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{latexsym}
+\usepackage{geometry}
+\usepackage{framed}
+\usepackage{color}
+\geometry{left=1in,right=1in,top=1in,bottom=1in}
+\newtheorem{problem}{Problem}
+\newenvironment{solution}{\begin{proof}[Solution:]}{\end{proof}}
+\title{Problem Set 1}
+%\author{WRITE YOUR NAME AND YOUR STUDENT ID HERE}
+\begin{document}
+	\maketitle
+	\begin{center}
+		\begin{framed}
+			\textbf{Submit you solutions to pengyi0606@icloud.com by 22:59, Feb. 28th.}
+		\end{framed}
+		\begin{framed}
+			\textbf{For this week's problem set, you may not skip any step in your proofs.}
+		\end{framed}
+	\end{center}
+\begin{problem}
+	Prove that, for any sets $A,B,C$, $A \subseteq B$, the following three statements are equivalent:
+	\begin{enumerate}
+		\item $A\subseteq B$
+		\item $A\cap B=A$
+		\item $A\cup B=B$
+	\end{enumerate}
+Hints: This problem asks you to show that 1 iff 2 iff 3. You can show this by proving that 1 implies 2 and that 2 implies 3 and that 3 implies 1.
+\end{problem}
+\begin{problem}
+	Prove that, for any sets $A$ and $B$, $A = B$ if and only if $\mathcal{P}(A)=\mathcal{P}(B)$.
+\end{problem}
+\begin{problem}
+	Give an example where $\bigcap A \cap \bigcap B \neq \bigcap(A\cap B)$ for $A\neq\emptyset$, $B\neq \emptyset$, and $A\cap B\neq\emptyset$.\footnote{You may wonder why we require $A,B$, and their intersection to be non-empty. A simple answer is that given the definition of arbitrary intersections, $\bigcap \emptyset$ turns out to be something ``the universe of sets'' (why?), i.e., the collection of all sets. But ``the universe of sets'' is not a set itself. So in this course we leave $\bigcap \emptyset$ as undefined.} Then show that $\bigcap A \cap \bigcap B \subseteq \bigcap(A\cap B)$ for any sets $A$ and $B$ such that $A\neq\emptyset$, $B\neq \emptyset$, and $A\cap B\neq\emptyset$.
+\end{problem}
+\begin{problem}
+	Prove that, for any sets $A$ and $B$, $\bigcup A \cup \bigcup B = \bigcup(A\cup B)$.
+\end{problem}
+\begin{problem}[De Morgan's Laws]
+Let $A\subseteq C$ and $B\subseteq C$. Prove that
+\begin{enumerate}
+	\item $C-(A\cup B)= (C-A)\cap(C-B)$
+	\item $C-(A\cap B)= (C-A)\cup(C-B)$
+\end{enumerate}
+\end{problem}
+\end{document}
